@@ -1,0 +1,748 @@
+{
+  "source": "/home/user/claritydesk/demo/output/sample_inaccessible.pdf",
+  "output": "/home/user/claritydesk/demo/output/sample_accessible.pdf",
+  "passed": true,
+  "before_count": 18,
+  "after_count": 0,
+  "resolved_count": 18,
+  "before": {
+    "source": "/home/user/claritydesk/demo/output/sample_inaccessible.pdf",
+    "sha256": "9b024984d4d891765b16c2ade6fa9d24276e6aeed671b56ec97126568c50f23e",
+    "pages": 3,
+    "count": 18,
+    "by_rule": {
+      "doc-title": 1,
+      "doc-language": 1,
+      "tagged-pdf": 1,
+      "bookmarks": 1,
+      "contrast": 7,
+      "heading-tagged": 4,
+      "image-alt": 3
+    },
+    "violations": [
+      {
+        "rule_id": "doc-title",
+        "page": 0,
+        "message": "Document has no descriptive title / DisplayDocTitle is not set.",
+        "target": "",
+        "details": {},
+        "sc": "2.4.2",
+        "level": "A",
+        "rule_name": "Page Titled"
+      },
+      {
+        "rule_id": "doc-language",
+        "page": 0,
+        "message": "Document default language (catalog /Lang) is not set.",
+        "target": "",
+        "details": {},
+        "sc": "3.1.1",
+        "level": "A",
+        "rule_name": "Language of Page"
+      },
+      {
+        "rule_id": "tagged-pdf",
+        "page": 0,
+        "message": "Document is not a Tagged PDF (missing /MarkInfo Marked or /StructTreeRoot).",
+        "target": "",
+        "details": {},
+        "sc": "1.3.1",
+        "level": "A",
+        "rule_name": "Info and Relationships"
+      },
+      {
+        "rule_id": "bookmarks",
+        "page": 0,
+        "message": "3-page document has no navigational bookmarks/outline.",
+        "target": "",
+        "details": {},
+        "sc": "2.4.5",
+        "level": "AA",
+        "rule_name": "Multiple Ways"
+      },
+      {
+        "rule_id": "contrast",
+        "page": 1,
+        "message": "Text contrast 2.68:1 is below the 4.5:1 minimum: 'Every team member should review it during onboarding.'",
+        "target": "Every team member should review it duri\u2026",
+        "details": {
+          "text": "Every team member should review it during onboarding.",
+          "bbox": [
+            60.0,
+            168.1750030517578,
+            332.65692138671875,
+            183.28900146484375
+          ],
+          "color": [
+            0.6196078431372549,
+            0.6196078431372549,
+            0.6196078431372549
+          ],
+          "bg": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "size": 11.0,
+          "need": 4.5,
+          "ratio": 2.68
+        },
+        "sc": "1.4.3",
+        "level": "AA",
+        "rule_name": "Contrast (Minimum)"
+      },
+      {
+        "rule_id": "contrast",
+        "page": 1,
+        "message": "Text contrast 2.68:1 is below the 4.5:1 minimum: 'It is updated annually by the People Operations team.'",
+        "target": "It is updated annually by the People Op\u2026",
+        "details": {
+          "text": "It is updated annually by the People Operations team.",
+          "bbox": [
+            60.0,
+            188.1750030517578,
+            321.7009582519531,
+            203.28900146484375
+          ],
+          "color": [
+            0.6196078431372549,
+            0.6196078431372549,
+            0.6196078431372549
+          ],
+          "bg": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "size": 11.0,
+          "need": 4.5,
+          "ratio": 2.68
+        },
+        "sc": "1.4.3",
+        "level": "AA",
+        "rule_name": "Contrast (Minimum)"
+      },
+      {
+        "rule_id": "contrast",
+        "page": 1,
+        "message": "Text contrast 2.68:1 is below the 4.5:1 minimum: 'Questions may be directed to your manager or HR.'",
+        "target": "Questions may be directed to your manag\u2026",
+        "details": {
+          "text": "Questions may be directed to your manager or HR.",
+          "bbox": [
+            60.0,
+            208.1750030517578,
+            308.8199157714844,
+            223.28900146484375
+          ],
+          "color": [
+            0.6196078431372549,
+            0.6196078431372549,
+            0.6196078431372549
+          ],
+          "bg": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "size": 11.0,
+          "need": 4.5,
+          "ratio": 2.68
+        },
+        "sc": "1.4.3",
+        "level": "AA",
+        "rule_name": "Contrast (Minimum)"
+      },
+      {
+        "rule_id": "heading-tagged",
+        "page": 1,
+        "message": "Heading-styled text is not tagged as a heading: 'Annual Accessibility & HR Policy Handbook'",
+        "target": "Annual Accessibility & HR Policy Handbo\u2026",
+        "details": {
+          "text": "Annual Accessibility & HR Policy Handbook",
+          "size": 22.0,
+          "level": 1,
+          "bbox": [
+            60.0,
+            66.45999908447266,
+            519.6678466796875,
+            96.75399780273438
+          ]
+        },
+        "sc": "1.3.1",
+        "level": "A",
+        "rule_name": "Info and Relationships (Headings)"
+      },
+      {
+        "rule_id": "heading-tagged",
+        "page": 1,
+        "message": "Heading-styled text is not tagged as a heading: '1. Welcome & Purpose'",
+        "target": "1. Welcome & Purpose",
+        "details": {
+          "text": "1. Welcome & Purpose",
+          "size": 16.0,
+          "level": 2,
+          "bbox": [
+            60.0,
+            112.87999725341797,
+            232.49600219726562,
+            134.91200256347656
+          ]
+        },
+        "sc": "1.3.1",
+        "level": "A",
+        "rule_name": "Info and Relationships (Headings)"
+      },
+      {
+        "rule_id": "image-alt",
+        "page": 1,
+        "message": "Image (xref 14) on page 1 has no text alternative.",
+        "target": "page1-img14",
+        "details": {
+          "xref": 14,
+          "caption": "Figure 1: ClarityDesk corporate logo",
+          "heading": "1. Welcome & Purpose",
+          "surrounding_text": "Every team member should review it during onboarding. It is updated annually by the People Operations team. Questions may be directed to your manager or HR. Our commitment to accessibility is described below."
+        },
+        "sc": "1.1.1",
+        "level": "A",
+        "rule_name": "Non-text Content"
+      },
+      {
+        "rule_id": "contrast",
+        "page": 2,
+        "message": "Text contrast 2.68:1 is below the 4.5:1 minimum: 'Requests are handled confidentially within five days.'",
+        "target": "Requests are handled confidentially wit\u2026",
+        "details": {
+          "text": "Requests are handled confidentially within five days.",
+          "bbox": [
+            60.0,
+            118.17500305175781,
+            314.9469909667969,
+            133.28900146484375
+          ],
+          "color": [
+            0.6196078431372549,
+            0.6196078431372549,
+            0.6196078431372549
+          ],
+          "bg": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "size": 11.0,
+          "need": 4.5,
+          "ratio": 2.68
+        },
+        "sc": "1.4.3",
+        "level": "AA",
+        "rule_name": "Contrast (Minimum)"
+      },
+      {
+        "rule_id": "contrast",
+        "page": 2,
+        "message": "Text contrast 2.68:1 is below the 4.5:1 minimum: 'The chart below shows recent request volume.'",
+        "target": "The chart below shows recent request vo\u2026",
+        "details": {
+          "text": "The chart below shows recent request volume.",
+          "bbox": [
+            60.0,
+            138.1750030517578,
+            287.4249267578125,
+            153.28900146484375
+          ],
+          "color": [
+            0.6196078431372549,
+            0.6196078431372549,
+            0.6196078431372549
+          ],
+          "bg": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "size": 11.0,
+          "need": 4.5,
+          "ratio": 2.68
+        },
+        "sc": "1.4.3",
+        "level": "AA",
+        "rule_name": "Contrast (Minimum)"
+      },
+      {
+        "rule_id": "heading-tagged",
+        "page": 2,
+        "message": "Heading-styled text is not tagged as a heading: '2. Workplace Accommodations'",
+        "target": "2. Workplace Accommodations",
+        "details": {
+          "text": "2. Workplace Accommodations",
+          "size": 16.0,
+          "level": 2,
+          "bbox": [
+            60.0,
+            62.87999725341797,
+            297.3919982910156,
+            84.91200256347656
+          ]
+        },
+        "sc": "1.3.1",
+        "level": "A",
+        "rule_name": "Info and Relationships (Headings)"
+      },
+      {
+        "rule_id": "image-alt",
+        "page": 2,
+        "message": "Image (xref 25) on page 2 has no text alternative.",
+        "target": "page2-img25",
+        "details": {
+          "xref": 25,
+          "caption": "Figure 2: 2024 quarterly accommodation requests by department",
+          "heading": "2. Workplace Accommodations",
+          "surrounding_text": "2. Workplace Accommodations We provide reasonable accommodations on request. Requests are handled confidentially within five days. The chart below shows recent request volume."
+        },
+        "sc": "1.1.1",
+        "level": "A",
+        "rule_name": "Non-text Content"
+      },
+      {
+        "rule_id": "contrast",
+        "page": 3,
+        "message": "Text contrast 2.68:1 is below the 4.5:1 minimum: 'You may also use the anonymous reporting line.'",
+        "target": "You may also use the anonymous reportin\u2026",
+        "details": {
+          "text": "You may also use the anonymous reporting line.",
+          "bbox": [
+            60.0,
+            118.17500305175781,
+            295.388916015625,
+            133.28900146484375
+          ],
+          "color": [
+            0.6196078431372549,
+            0.6196078431372549,
+            0.6196078431372549
+          ],
+          "bg": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "size": 11.0,
+          "need": 4.5,
+          "ratio": 2.68
+        },
+        "sc": "1.4.3",
+        "level": "AA",
+        "rule_name": "Contrast (Minimum)"
+      },
+      {
+        "rule_id": "contrast",
+        "page": 3,
+        "message": "Text contrast 2.68:1 is below the 4.5:1 minimum: 'Retaliation for good-faith reports is prohibited.'",
+        "target": "Retaliation for good-faith reports is p\u2026",
+        "details": {
+          "text": "Retaliation for good-faith reports is prohibited.",
+          "bbox": [
+            60.0,
+            138.1750030517578,
+            282.54095458984375,
+            153.28900146484375
+          ],
+          "color": [
+            0.6196078431372549,
+            0.6196078431372549,
+            0.6196078431372549
+          ],
+          "bg": [
+            1.0,
+            1.0,
+            1.0
+          ],
+          "size": 11.0,
+          "need": 4.5,
+          "ratio": 2.68
+        },
+        "sc": "1.4.3",
+        "level": "AA",
+        "rule_name": "Contrast (Minimum)"
+      },
+      {
+        "rule_id": "heading-tagged",
+        "page": 3,
+        "message": "Heading-styled text is not tagged as a heading: '3. Reporting & Contacts'",
+        "target": "3. Reporting & Contacts",
+        "details": {
+          "text": "3. Reporting & Contacts",
+          "size": 16.0,
+          "level": 2,
+          "bbox": [
+            60.0,
+            62.87999725341797,
+            242.24000549316406,
+            84.91200256347656
+          ]
+        },
+        "sc": "1.3.1",
+        "level": "A",
+        "rule_name": "Info and Relationships (Headings)"
+      },
+      {
+        "rule_id": "image-alt",
+        "page": 3,
+        "message": "Image (xref 34) on page 3 has no text alternative.",
+        "target": "page3-img34",
+        "details": {
+          "xref": 34,
+          "caption": "Figure 3: HR team group photo",
+          "heading": "3. Reporting & Contacts",
+          "surrounding_text": "3. Reporting & Contacts Report concerns to the People Operations team. You may also use the anonymous reporting line. Retaliation for good-faith reports is prohibited."
+        },
+        "sc": "1.1.1",
+        "level": "A",
+        "rule_name": "Non-text Content"
+      }
+    ],
+    "scanned_at": 1782460645.1196666
+  },
+  "after": {
+    "source": "/home/user/claritydesk/demo/output/sample_accessible.pdf",
+    "sha256": "9b024984d4d891765b16c2ade6fa9d24276e6aeed671b56ec97126568c50f23e",
+    "pages": 3,
+    "count": 0,
+    "by_rule": {},
+    "violations": [],
+    "scanned_at": 1782460645.2007291
+  },
+  "actions": [
+    {
+      "rule_id": "tagged-pdf",
+      "page": 0,
+      "target": "document",
+      "description": "Marked document as Tagged PDF and created a StructTreeRoot.",
+      "generated": {}
+    },
+    {
+      "rule_id": "doc-title",
+      "page": 0,
+      "target": "document",
+      "description": "Set document title and enabled DisplayDocTitle.",
+      "generated": {
+        "title": "Annual Accessibility & HR Policy Handbook"
+      }
+    },
+    {
+      "rule_id": "doc-language",
+      "page": 0,
+      "target": "document",
+      "description": "Set document language to en-US.",
+      "generated": {
+        "lang": "en-US"
+      }
+    },
+    {
+      "rule_id": "heading-tagged",
+      "page": 1,
+      "target": "Annual Accessibility & HR Policy Handbo\u2026",
+      "description": "Tagged heading-styled text as H1.",
+      "generated": {
+        "level": 1,
+        "text": "Annual Accessibility & HR Policy Handbook"
+      }
+    },
+    {
+      "rule_id": "heading-tagged",
+      "page": 1,
+      "target": "1. Welcome & Purpose",
+      "description": "Tagged heading-styled text as H2.",
+      "generated": {
+        "level": 2,
+        "text": "1. Welcome & Purpose"
+      }
+    },
+    {
+      "rule_id": "heading-tagged",
+      "page": 2,
+      "target": "2. Workplace Accommodations",
+      "description": "Tagged heading-styled text as H2.",
+      "generated": {
+        "level": 2,
+        "text": "2. Workplace Accommodations"
+      }
+    },
+    {
+      "rule_id": "heading-tagged",
+      "page": 3,
+      "target": "3. Reporting & Contacts",
+      "description": "Tagged heading-styled text as H2.",
+      "generated": {
+        "level": 2,
+        "text": "3. Reporting & Contacts"
+      }
+    },
+    {
+      "rule_id": "image-alt",
+      "page": 1,
+      "target": "page1-img14",
+      "description": "Generated alt text and attached a Figure/Alt structure element.",
+      "generated": {
+        "alt_text": "Figure 1: ClarityDesk corporate logo",
+        "provider": "heuristic"
+      }
+    },
+    {
+      "rule_id": "image-alt",
+      "page": 2,
+      "target": "page2-img25",
+      "description": "Generated alt text and attached a Figure/Alt structure element.",
+      "generated": {
+        "alt_text": "Figure 2: 2024 quarterly accommodation requests by department",
+        "provider": "heuristic"
+      }
+    },
+    {
+      "rule_id": "image-alt",
+      "page": 3,
+      "target": "page3-img34",
+      "description": "Generated alt text and attached a Figure/Alt structure element.",
+      "generated": {
+        "alt_text": "Figure 3: HR team group photo",
+        "provider": "heuristic"
+      }
+    },
+    {
+      "rule_id": "bookmarks",
+      "page": 0,
+      "target": "document",
+      "description": "Generated 4 outline bookmarks from headings.",
+      "generated": {
+        "entries": [
+          "Annual Accessibility & HR Policy Handbook",
+          "1. Welcome & Purpose",
+          "2. Workplace Accommodations",
+          "3. Reporting & Contacts"
+        ]
+      }
+    },
+    {
+      "rule_id": "contrast",
+      "page": 1,
+      "target": "Every team member should review it duri\u2026",
+      "description": "Darkened low-contrast text to meet 4.5:1.",
+      "generated": {
+        "new_color": [
+          0.347,
+          0.347,
+          0.347
+        ]
+      }
+    },
+    {
+      "rule_id": "contrast",
+      "page": 1,
+      "target": "It is updated annually by the People Op\u2026",
+      "description": "Darkened low-contrast text to meet 4.5:1.",
+      "generated": {
+        "new_color": [
+          0.347,
+          0.347,
+          0.347
+        ]
+      }
+    },
+    {
+      "rule_id": "contrast",
+      "page": 1,
+      "target": "Questions may be directed to your manag\u2026",
+      "description": "Darkened low-contrast text to meet 4.5:1.",
+      "generated": {
+        "new_color": [
+          0.347,
+          0.347,
+          0.347
+        ]
+      }
+    },
+    {
+      "rule_id": "contrast",
+      "page": 2,
+      "target": "Requests are handled confidentially wit\u2026",
+      "description": "Darkened low-contrast text to meet 4.5:1.",
+      "generated": {
+        "new_color": [
+          0.347,
+          0.347,
+          0.347
+        ]
+      }
+    },
+    {
+      "rule_id": "contrast",
+      "page": 2,
+      "target": "The chart below shows recent request vo\u2026",
+      "description": "Darkened low-contrast text to meet 4.5:1.",
+      "generated": {
+        "new_color": [
+          0.347,
+          0.347,
+          0.347
+        ]
+      }
+    },
+    {
+      "rule_id": "contrast",
+      "page": 3,
+      "target": "You may also use the anonymous reportin\u2026",
+      "description": "Darkened low-contrast text to meet 4.5:1.",
+      "generated": {
+        "new_color": [
+          0.347,
+          0.347,
+          0.347
+        ]
+      }
+    },
+    {
+      "rule_id": "contrast",
+      "page": 3,
+      "target": "Retaliation for good-faith reports is p\u2026",
+      "description": "Darkened low-contrast text to meet 4.5:1.",
+      "generated": {
+        "new_color": [
+          0.347,
+          0.347,
+          0.347
+        ]
+      }
+    }
+  ],
+  "verification": [
+    {
+      "rule_id": "doc-title",
+      "page": 0,
+      "target": "",
+      "resolved": true,
+      "note": "Verified against WCAG 2.4.2"
+    },
+    {
+      "rule_id": "doc-language",
+      "page": 0,
+      "target": "",
+      "resolved": true,
+      "note": "Verified against WCAG 3.1.1"
+    },
+    {
+      "rule_id": "tagged-pdf",
+      "page": 0,
+      "target": "",
+      "resolved": true,
+      "note": "Verified against WCAG 1.3.1"
+    },
+    {
+      "rule_id": "bookmarks",
+      "page": 0,
+      "target": "",
+      "resolved": true,
+      "note": "Verified against WCAG 2.4.5"
+    },
+    {
+      "rule_id": "contrast",
+      "page": 1,
+      "target": "Every team member should review it duri\u2026",
+      "resolved": true,
+      "note": "Verified against WCAG 1.4.3"
+    },
+    {
+      "rule_id": "contrast",
+      "page": 1,
+      "target": "It is updated annually by the People Op\u2026",
+      "resolved": true,
+      "note": "Verified against WCAG 1.4.3"
+    },
+    {
+      "rule_id": "contrast",
+      "page": 1,
+      "target": "Questions may be directed to your manag\u2026",
+      "resolved": true,
+      "note": "Verified against WCAG 1.4.3"
+    },
+    {
+      "rule_id": "heading-tagged",
+      "page": 1,
+      "target": "Annual Accessibility & HR Policy Handbo\u2026",
+      "resolved": true,
+      "note": "Verified against WCAG 1.3.1"
+    },
+    {
+      "rule_id": "heading-tagged",
+      "page": 1,
+      "target": "1. Welcome & Purpose",
+      "resolved": true,
+      "note": "Verified against WCAG 1.3.1"
+    },
+    {
+      "rule_id": "image-alt",
+      "page": 1,
+      "target": "page1-img14",
+      "resolved": true,
+      "note": "Verified against WCAG 1.1.1"
+    },
+    {
+      "rule_id": "contrast",
+      "page": 2,
+      "target": "Requests are handled confidentially wit\u2026",
+      "resolved": true,
+      "note": "Verified against WCAG 1.4.3"
+    },
+    {
+      "rule_id": "contrast",
+      "page": 2,
+      "target": "The chart below shows recent request vo\u2026",
+      "resolved": true,
+      "note": "Verified against WCAG 1.4.3"
+    },
+    {
+      "rule_id": "heading-tagged",
+      "page": 2,
+      "target": "2. Workplace Accommodations",
+      "resolved": true,
+      "note": "Verified against WCAG 1.3.1"
+    },
+    {
+      "rule_id": "image-alt",
+      "page": 2,
+      "target": "page2-img25",
+      "resolved": true,
+      "note": "Verified against WCAG 1.1.1"
+    },
+    {
+      "rule_id": "contrast",
+      "page": 3,
+      "target": "You may also use the anonymous reportin\u2026",
+      "resolved": true,
+      "note": "Verified against WCAG 1.4.3"
+    },
+    {
+      "rule_id": "contrast",
+      "page": 3,
+      "target": "Retaliation for good-faith reports is p\u2026",
+      "resolved": true,
+      "note": "Verified against WCAG 1.4.3"
+    },
+    {
+      "rule_id": "heading-tagged",
+      "page": 3,
+      "target": "3. Reporting & Contacts",
+      "resolved": true,
+      "note": "Verified against WCAG 1.3.1"
+    },
+    {
+      "rule_id": "image-alt",
+      "page": 3,
+      "target": "page3-img34",
+      "resolved": true,
+      "note": "Verified against WCAG 1.1.1"
+    }
+  ],
+  "generated_at": 1782460645.2220986
+}
