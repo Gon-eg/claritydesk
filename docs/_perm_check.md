@@ -1,1 +1,1 @@
-permission check
+<!-- Temporary connectivity check from publishing. Safe to delete. -->
