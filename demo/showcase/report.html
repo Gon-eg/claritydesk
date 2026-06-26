@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ClarityDesk Compliance Report</title>
+<style>
+ :root{--bg:#0b1220;--card:#121b2e;--ink:#e8eef9;--mut:#9fb0cc;--line:#243349;
+        --ok:#2ecc71;--warn:#e67e22;--bad:#e74c3c;--accent:#4aa3ff;}
+ *{box-sizing:border-box}
+ body{margin:0;font:15px/1.5 system-ui,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--ink)}
+ .wrap{max-width:920px;margin:0 auto;padding:32px 20px}
+ h1{font-size:24px;margin:0 0 4px} .sub{color:var(--mut);font-size:13px;word-break:break-all}
+ .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin:22px 0}
+ .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px}
+ .card .big{font-size:34px;font-weight:700}
+ .card.before .big{color:var(--bad)} .card.after .big{color:var(--ok)}
+ .label{color:var(--mut);font-size:12px;text-transform:uppercase;letter-spacing:.06em}
+ .status{display:inline-block;padding:6px 14px;border-radius:999px;font-weight:700}
+ .status.pass{background:rgba(46,204,113,.15);color:var(--ok);border:1px solid var(--ok)}
+ .status.fail{background:rgba(231,76,60,.15);color:var(--bad);border:1px solid var(--bad)}
+ table{width:100%;border-collapse:collapse;margin-top:8px}
+ th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line)}
+ th{color:var(--mut);font-size:12px;text-transform:uppercase;letter-spacing:.05em}
+ td.num{text-align:right;font-variant-numeric:tabular-nums;font-weight:600}
+ td.num.ok{color:var(--ok)} td.num.warn{color:var(--warn)}
+ a{color:var(--accent)}
+ .bar{height:10px;border-radius:999px;background:#22304a;overflow:hidden;margin-top:10px}
+ .bar>i{display:block;height:100%;background:linear-gradient(90deg,#2ecc71,#4aa3ff);width:100%}
+ ul.fixes{list-style:none;padding:0;margin:8px 0}
+ ul.fixes li{padding:8px 0;border-bottom:1px solid var(--line)}
+ .gen{color:var(--accent)} small{color:var(--mut)}
+ h2{margin-top:30px;font-size:17px}
+</style></head><body><div class="wrap">
+ <h1>ClarityDesk Compliance Report</h1>
+ <div class="sub">Source: /home/user/claritydesk/demo/output/sample_inaccessible.pdf<br>
+   Document hash: 9b024984d4d89176… · Generated 2026-06-26 07:57 UTC</div>
+
+ <div class="grid">
+   <div class="card before"><div class="label">Violations before</div><div class="big">18</div></div>
+   <div class="card after"><div class="label">Violations after</div><div class="big">0</div></div>
+   <div class="card"><div class="label">Status</div>
+     <div style="margin-top:10px"><span class="status pass">PASS</span></div>
+     <div class="bar"><i></i></div>
+     <div class="label" style="margin-top:8px">18/18 resolved</div></div>
+ </div>
+
+ <h2>Violations by WCAG rule</h2>
+ <table><thead><tr><th>SC</th><th>Level</th><th>Rule</th><th>Before</th><th>After</th></tr></thead>
+ <tbody><tr><td><a href='https://www.w3.org/WAI/WCAG21/quickref/#multiple-ways' target='_blank'>2.4.5</a></td><td>AA</td><td>Multiple Ways</td><td class='num'>1</td><td class='num ok'>0</td></tr><tr><td><a href='https://www.w3.org/WAI/WCAG21/quickref/#contrast-minimum' target='_blank'>1.4.3</a></td><td>AA</td><td>Contrast (Minimum)</td><td class='num'>7</td><td class='num ok'>0</td></tr><tr><td><a href='https://www.w3.org/WAI/WCAG21/quickref/#language-of-page' target='_blank'>3.1.1</a></td><td>A</td><td>Language of Page</td><td class='num'>1</td><td class='num ok'>0</td></tr><tr><td><a href='https://www.w3.org/WAI/WCAG21/quickref/#page-titled' target='_blank'>2.4.2</a></td><td>A</td><td>Page Titled</td><td class='num'>1</td><td class='num ok'>0</td></tr><tr><td><a href='https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships' target='_blank'>1.3.1</a></td><td>A</td><td>Info and Relationships (Headings)</td><td class='num'>4</td><td class='num ok'>0</td></tr><tr><td><a href='https://www.w3.org/WAI/WCAG21/quickref/#non-text-content' target='_blank'>1.1.1</a></td><td>A</td><td>Non-text Content</td><td class='num'>3</td><td class='num ok'>0</td></tr><tr><td><a href='https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships' target='_blank'>1.3.1</a></td><td>A</td><td>Info and Relationships</td><td class='num'>1</td><td class='num ok'>0</td></tr></tbody></table>
+
+ <h2>Fixes applied (18)</h2>
+ <ul class="fixes"><li><b>1.3.1</b> <small>p0</small> Marked document as Tagged PDF and created a StructTreeRoot. </li><li><b>2.4.2</b> <small>p0</small> Set document title and enabled DisplayDocTitle. <span class='gen'>“Annual Accessibility &amp; HR Policy Handbook”</span></li><li><b>3.1.1</b> <small>p0</small> Set document language to en-US. </li><li><b>1.3.1</b> <small>p1</small> Tagged heading-styled text as H1. <span class='gen'>“Annual Accessibility &amp; HR Policy Handbook”</span></li><li><b>1.3.1</b> <small>p1</small> Tagged heading-styled text as H2. <span class='gen'>“1. Welcome &amp; Purpose”</span></li><li><b>1.3.1</b> <small>p2</small> Tagged heading-styled text as H2. <span class='gen'>“2. Workplace Accommodations”</span></li><li><b>1.3.1</b> <small>p3</small> Tagged heading-styled text as H2. <span class='gen'>“3. Reporting &amp; Contacts”</span></li><li><b>1.1.1</b> <small>p1</small> Generated alt text and attached a Figure/Alt structure element. <span class='gen'>alt: “Figure 1: ClarityDesk corporate logo”</span></li><li><b>1.1.1</b> <small>p2</small> Generated alt text and attached a Figure/Alt structure element. <span class='gen'>alt: “Figure 2: 2024 quarterly accommodation requests by department”</span></li><li><b>1.1.1</b> <small>p3</small> Generated alt text and attached a Figure/Alt structure element. <span class='gen'>alt: “Figure 3: HR team group photo”</span></li><li><b>2.4.5</b> <small>p0</small> Generated 4 outline bookmarks from headings. </li><li><b>1.4.3</b> <small>p1</small> Darkened low-contrast text to meet 4.5:1. </li><li><b>1.4.3</b> <small>p1</small> Darkened low-contrast text to meet 4.5:1. </li><li><b>1.4.3</b> <small>p1</small> Darkened low-contrast text to meet 4.5:1. </li><li><b>1.4.3</b> <small>p2</small> Darkened low-contrast text to meet 4.5:1. </li><li><b>1.4.3</b> <small>p2</small> Darkened low-contrast text to meet 4.5:1. </li><li><b>1.4.3</b> <small>p3</small> Darkened low-contrast text to meet 4.5:1. </li><li><b>1.4.3</b> <small>p3</small> Darkened low-contrast text to meet 4.5:1. </li></ul>
+</div></body></html>
